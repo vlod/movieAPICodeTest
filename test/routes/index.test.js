@@ -12,11 +12,6 @@ describe('GET /api/v1/', () => {
     .get('/api/v1')
     .then((res) => {
       expect(res).to.have.status(200);
-      // expect(res).to.be.json; // eslint-disable-line
-      // expect(res.body).to.have.property('user');
-      // expect(res.body.user).to.have.property('name');
-
-      // expect(res.body.user.name).to.equal('Foo Springs');
     })
     .catch((err) => {
       console.error('error thrown: ', err);
